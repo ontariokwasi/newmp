@@ -27,10 +27,13 @@
 var constid = '';
 function says(id){
 constid = id;
+	if(constid=='adenta'){
+	alert(constid);
+	}
 }
 function say(id){
 document.getElementById("default").hidden = true;
-document.getElementById('img').src = "img/adenta.jpg";
+document.getElementById('img').src = "img/"+constid+".jpg";
 document.getElementById('img').alt = "img/"+constid+".jpg Constituency not available:-O Update app to get all constituencies.";
 	}
 </script>
